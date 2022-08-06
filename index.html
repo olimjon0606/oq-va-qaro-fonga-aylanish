@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d73934e60a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="contener">
+    <nav>
+       <h1>Olimjon</h1>
+       <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Portfolyo</a></li>
+           <li><a href="#">Servis</a></li>
+           <li><a href="#">Contact</a></li>      
+           <img id="oy" src="oy.png" alt="">    
+       </ul>
+    </nav>
+
+    <main>
+     <div class="malumatlar">
+        <h1>Men <span>Olimjon</span>  Orifjonov</h1>
+        <p>Samarqand Viloyati Kattaqo'rg'on tumani Tavaron MFY da istiqomat qilaman. Yoshim o'n oltida , kelajakda Front End dasturchi bo'lmoqchiman.</p>
+        <a>Men Haqimda</a>
+       <div class="ilar">
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-behance"></i>
+        <i class="fab fa-dribbble"></i>
+       </div>
+
+     </div>
+     <div class="rasm">
+         <img class="ss" src="Без имени-3.png" alt="">
+         <img class="sd" src="Без имени-4.png" alt="">
+     </div>
+    </main>
+    <footer>
+        <p>&copy;2022 Olimjon.Barcha Huquqlar Himoyalangan.</p>
+    </footer>
+</div>
+
+
+
+<script>
+    let oy =document.getElementById('oy');
+
+    oy.onclick= function(){
+        document.body.classList.toggle('qorongu');
+        if(document.body.classList.contains('qorongu')){
+        oy.src="12.png";
+        }else{
+            oy.src="oy.png";
+        }
+    }
+    
+   </script>
+</body>
+</html>
